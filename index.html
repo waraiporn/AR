@@ -6,12 +6,13 @@
   </head>
   <body style="margin: 0; overflow: hidden;">
   <a-scene embedded 
-	   arjs="matrixCodeType: 3x3;" 
+	   arjs="detectionMode : mono_and_matrix;
+                 matrixCodeType: 3x3;" 
 	   vr-mode-ui="enabled: false">
 <a-market type="barcode" value="5">
   <a-box position="0 0.5 0"
 	 material="color: blue;">
-</a-box>
+  </a-box>
 <a-camera>
 </a-camera>
 </a-scene>
