@@ -5,15 +5,16 @@
     <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.4.9/aframe/build/aframe-ar.js"></script>
   </head>
   <body style="margin: 0; overflow: hidden;">
-    <a-scene>
-	  <a-box position="0 0 0"
-	    material="color: blue;">
+    <a-scene embedded 
+	     arjs="matrixCodeType: 3x3;"
+	     vr-mode-ui="enabled: false">
+	<a-market type="barcode" value="5">
+		  
+	  <a-box position="0 0.5 0"
+	         material="color: blue;">
 	  </a-box>
-	  <a-box position="0 0 8"
-	    material="color: red;">
-	  </a-box>
-	  <a-camera>
-	  </a-camera>
+	<a-camera>
+	</a-camera>
 	</a-scene>
   </body>
 </html>
